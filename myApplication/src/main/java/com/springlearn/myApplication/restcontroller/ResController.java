@@ -11,9 +11,14 @@ public class ResController {
         return "Sushmita Singh";
     }
 
-    @GetMapping("/")
+    @GetMapping("/city")
     public String getCity(){
         return "GKP";
+    }
+
+    @GetMapping("/state")
+    public String getState(){
+        return "UP";
     }
 
 }

@@ -10,20 +10,25 @@ public class CoachController {
     //define a private field for the dependency
     private Coach coach;
 
-    //define a constructor for dependency injection
-    //@Autowired
-    //public CoachController(Coach theCoach){
-    //    coach = theCoach;
-    //}
+    private Coach coach2;
 
-    //using Qualifier
+    //define a constructor for dependency injection
     @Autowired
-    public CoachController(@Qualifier("trackCoach") Coach theCoach){
+    public CoachController( @Qualifier("trackCoach") Coach theCoach,
+                            @Qualifier("trackCoach") Coach theCoach2){
+        System.out.println("In constructor: "+ getClass().getSimpleName());
         coach = theCoach;
+        coach2 = theCoach2;
     }
 
     @GetMapping("/getDailyUpdate")
     public String getDailyWorkout(){
         return coach.getDailyUpdate();
+    }
+
+    @GetMapping("/check")
+    public String check(){
+        //comparing 2 beans
+        return "Comparing beans: coach == coach2, " + (coach == coach2);
     }
 }

@@ -3,14 +3,14 @@ package com.springlearn.myApplication.coach;
 import org.springframework.stereotype.Component;
 
 @Component
-public class CricketCoach implements Coach{
+public class BaseballCoach implements Coach{
 
-    public CricketCoach(){
+    public BaseballCoach(){
         System.out.println("In constructor: "+ getClass().getSimpleName());
     }
-    
+
     @Override
     public String getDailyUpdate() {
-        return "Practice fast bowling";
+        return "Do baseball practice";
     }
 }

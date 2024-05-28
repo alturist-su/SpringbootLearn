@@ -1,4 +1,4 @@
-package com.springlearn.myApplication;
+package com.springlearn.myApplication.coach;
 
 public interface Coach{
   String getDailyWorkout();

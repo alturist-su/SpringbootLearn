@@ -10,7 +10,7 @@ public class BeanLifecycleController {
 
     //define a constructor for dependency injection
     @Autowired
-    public BeanLifecycleController( @Qualifier("cricketCoach") Coach theCoach){
+    public BeanLifecycleController( @Qualifier("aquatic") Coach theCoach){
         System.out.println("In constructor: "+ getClass().getSimpleName());
         coach = theCoach;
     }

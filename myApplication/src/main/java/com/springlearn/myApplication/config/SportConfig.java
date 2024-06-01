@@ -1,4 +1,8 @@
-port org.springframework.context.annotation.Bean;
+package com.springlearn.myApplication.config;
+
+import com.springlearn.myApplication.coach.Coach;
+import com.springlearn.myApplication.coach.SwimCoach;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration

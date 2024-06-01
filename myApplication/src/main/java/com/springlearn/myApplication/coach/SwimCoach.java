@@ -1,4 +1,4 @@
-
+package com.springlearn.myApplication.coach;
 
 //do not use @Component here
 public class SwimCoach implements Coach{

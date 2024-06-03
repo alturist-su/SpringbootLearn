@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 public class CricketCoach implements Coach{
 
     public CricketCoach(){
+        //print class name
         System.out.println("In constructor: "+ getClass().getSimpleName());
     }
 
@@ -22,7 +23,8 @@ public class CricketCoach implements Coach{
     public void doCleanup(){
         System.out.println("Do the cleanup: "+getClass().getSimpleName());
     }
-    
+
+    //overriden method
     @Override
     public String getDailyUpdate() {
         return "Practice fast bowling";

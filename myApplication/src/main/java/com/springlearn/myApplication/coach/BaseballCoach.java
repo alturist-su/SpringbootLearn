@@ -10,6 +10,7 @@ public class BaseballCoach implements Coach{
         System.out.println("In constructor: "+ getClass().getSimpleName());
     }
 
+    //overriden method of Coach
     @Override
     public String getDailyUpdate() {
         return "Do baseball practice";

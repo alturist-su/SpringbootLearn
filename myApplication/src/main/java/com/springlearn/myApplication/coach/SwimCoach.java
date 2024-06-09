@@ -9,6 +9,6 @@ public class SwimCoach implements Coach{
 
     @Override
     public String getDailyUpdate() {
-        return "Swim 100 meters";
+        return "Swim 100 meters daily";
     }
 }

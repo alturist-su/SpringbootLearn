@@ -6,7 +6,6 @@ import org.springframework.stereotype.Component;
 public class BaseballCoach implements Coach{
 
     public BaseballCoach(){
-        // print class name
         System.out.println("In constructor: "+ getClass().getSimpleName());
     }
 
